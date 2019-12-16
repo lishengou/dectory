@@ -1,0 +1,37 @@
+server:
+  port: 8023
+spring:
+  datasource:
+    url: jdbc:mysql://120.55.201.25:3306/woodpecker_test?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&serverTimezone=GMT%2b8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: woodpecker
+    password: lyj#2019
+  jmx:
+    default-domain: red-test
+  redis:
+    host: 47.106.165.210
+    port: 6379
+    database: 0
+    jedis:
+      pool:
+        max-active: 50
+        max-wait: 3000
+        max-idle: 20
+        min-idle: 1
+    timeout: 5000
+    password: lyj#2019
+ext:
+  erp:
+#    uri: http://apitest.erp.zmnyj.com  #erp接口
+     uri: http://erpjavatestapi.zmnyj.com
+  wechat:
+    appid: wxcf1db9bef6a0350d
+    appsecret: 78cadf413e8416b6c6c9aa7699a62ec3
+  interceptor:
+    access_token: e1478ae8-00e0-430f-a643-9170e3b2d612
+  current:
+    requrl: http://pctestapi.zmnyj.com
+  qiniu:
+    aK: 73trWr0RKIPIcaqoFobQmTiQdKyeUPJCFuestjVJ
+    sk: gi9sHhJDOjq4slFCPG5OHjScX65WvhVZ_64MKZbo
+    bucket: woodpecker

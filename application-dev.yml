@@ -1,0 +1,21 @@
+server:
+  port: 8023
+spring:
+  datasource:
+    url: jdbc:mysql://47.106.165.210:3306/woodpecker_test?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&serverTimezone=GMT%2b8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: d02e50379a8cdd80
+  jmx:
+    default-domain: red-dev
+ext:
+  erp:
+#    uri: http://apitest.erp.zmnyj.com  #erp接口
+     uri: http://api.yy.bupichina.com
+  wechat:
+    appid: wxcf1db9bef6a0350d
+    appsecret: 78cadf413e8416b6c6c9aa7699a62ec3
+  interceptor:
+    access_token: e1478ae8-00e0-430f-a643-9170e3b2d612
+  current:
+    requrl: http://pctestapi.zmnyj.com
